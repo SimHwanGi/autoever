@@ -20,5 +20,6 @@ public with sharing class firstclass {
         // vs TEST 2
         // vs TEST 3
         // vs Test 4
+        // vs Test 5 extension
     }
 }
