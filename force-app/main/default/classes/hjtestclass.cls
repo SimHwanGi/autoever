@@ -1,3 +1,3 @@
-public with sharing class hjtestclass {
-    Integer a = 5;
+public class hjtestclass {
+ Integer a = 5;
 }
