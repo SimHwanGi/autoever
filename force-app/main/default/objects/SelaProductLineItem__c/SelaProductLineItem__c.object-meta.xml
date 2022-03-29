@@ -165,7 +165,7 @@
         <label>SELA Product LineItem</label>
         <type>AutoNumber</type>
     </nameField>
-    <searchLayouts></searchLayouts>
+    <searchLayouts/>
     <sharingModel>ControlledByParent</sharingModel>
     <visibility>Public</visibility>
 </CustomObject>
