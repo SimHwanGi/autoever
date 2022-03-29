@@ -4,4 +4,5 @@ public class hjtestclass {
  String test2 = 'Goodbye';
  String test3 = 'AAA';
  String test4 = 'BBB';
+ String test5 ='sim';
 }
