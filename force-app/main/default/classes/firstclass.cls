@@ -9,12 +9,10 @@ public with sharing class firstclass {
         // git cmd test4
         // final git cmd test5
         // multi test git cmd test1
-<<<<<<< HEAD
     	// multi test git cmd test2
     	// multi test git cmd test3
     	// multi test git cmd Auto Trigger
     	// GIT LAB TEST
-=======
         // multi test git cmd test2
         // multi test git cmd test3
         // multi test git cmd Auto Trigger
@@ -22,6 +20,5 @@ public with sharing class firstclass {
         // vs TEST 2
         // vs TEST 3
         // vs Test 4
->>>>>>> 4f66fd248c2a1357223a1ba595564b6044a91f98
     }
 }
