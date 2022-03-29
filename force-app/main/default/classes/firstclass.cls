@@ -22,6 +22,5 @@ public with sharing class firstclass {
         // vs Test 4
         //  // vs Test5
         //  sim 
-        // hj.Lee
     }
 }
