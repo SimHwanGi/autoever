@@ -22,6 +22,9 @@ public with sharing class firstclass {
         // vs Test 4
         //  // vs Test5
         //  sim 
+<<<<<<< HEAD
         // hj.Lee
+=======
+>>>>>>> aa219500ea77c6699940121bb768f1e1d92a451c
     }
 }
