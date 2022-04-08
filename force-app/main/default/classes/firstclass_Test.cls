@@ -1,5 +1,9 @@
+@isTest
 public with sharing class firstclass_Test {
-public firstclass_Test() {
-    firstclass fc = new firstclass();
-}
+    @isTest
+    static void dotest(){
+        firstclass fc = new firstclass();
+        hjtestclass hj = new hjtestclass();
+    }
+
 }
