@@ -3,5 +3,6 @@ public with sharing class firstclass {
         // localtest
             //br3 make
              //br3 make test2
+              //br3 make only class
     }
 }
