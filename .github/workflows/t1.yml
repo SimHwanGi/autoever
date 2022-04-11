@@ -38,4 +38,4 @@ jobs:
       run: sfdx force:source:convert --rootdir=force-app --outputdir=convert
       # run: sfdx force:source:convert --rootdir=force-app/main/default/classes --outputdir=convert
     - name: 'Run Test on Metadata'
-      run: sfdx force:mdapi:deploy --deploydir=convert --testlevel=RunAllTestsInOrg -u hub-org    
+      run: sfdx force:mdapi:deploy --deploydir=convert --testlevel=RunAllTestsInOrg --checkonly -u hub-org    
