@@ -31,9 +31,9 @@ jobs:
            echo 'y' | sfdx plugins:install sfdx-git-delta
            git config remote.origin.fetch "+refs/heads/*:refs/remotes/origin/*"
            git fetch --all
-           echo git log
+           git log
     - name: Get delta files with SGD
-      run: sfdx sgd:source:delta --to master --from origin/br4 --output .
+      run: sfdx sgd:source:delta --to master --from HEAD^ --output .
       
 
     - name: 'Decrypt file'
