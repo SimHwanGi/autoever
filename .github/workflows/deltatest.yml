@@ -15,7 +15,7 @@ jobs:
   
     steps:
    
-    - uses: actions/checkout@v2
+    - uses: actions/checkout@v3
 
     # Runs a single command using the runners shell
     - name: 'Build and Deploy'
@@ -29,16 +29,19 @@ jobs:
     - name: Install plugin sfdx-git-delta
       run: |
            echo 'y' | sfdx plugins:install sfdx-git-delta
+
     - name: Get delta files with SGD
-      run: sfdx sgd:source:delta --to HEAD --from HEAD^ --output .
+      run: sfdx sgd:source:delta --to HEAD --from HEAD~1 --output .
       
 
     - name: 'Decrypt file'
       run: openssl enc -nosalt -aes-256-cbc -d -in assets/server.key.enc -out server.key -base64 -K ${{secrets.DECRYPTION_KEY}} -iv ${{secrets.DECRYPTION_IV}}
+    
     - name: 'Authorize'
       run: |
         echo username value ${{ secrets.USERNAME_STAGING }}
         sfdx force:auth:jwt:grant --clientid=${{ secrets.CONSUMER_KEY }} --username=${{ secrets.USERNAME }} --jwtkeyfile server.key --setdefaultdevhubusername --setalias=hub-org
+    
     - name: Deploy changes
       run: |
            echo "--- package.xml generated with added and modified metadata ---"
