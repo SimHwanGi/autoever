@@ -31,7 +31,7 @@ jobs:
            echo 'y' | sfdx plugins:install sfdx-git-delta
 
     - name: Get delta files with SGD
-      run: sfdx sgd:source:delta --to HEAD --from HEAD~1 --output .
+      run: sfdx sgd:source:delta --to HEAD --from origin/HEAD~1 --output .
       
 
     - name: 'Decrypt file'
