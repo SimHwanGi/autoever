@@ -25,9 +25,7 @@ jobs:
         tar xJf sfdx-linux-amd64.tar.xz -C sfdx-cli --strip-components 1
         ./sfdx-cli/install
         sfdx update
-    - name: Create docker image
-      run: ./docker-build.sh ${{ github.head_ref }}.${{ github.sha }}
-      
+ 
     - name: Install plugin sfdx-git-delta
       run: |
            echo 'y' | sfdx plugins:install sfdx-git-delta
