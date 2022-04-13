@@ -35,12 +35,9 @@ jobs:
            
            echo git log
            git log
-                      
-           echo ${{ github.event.before }}
-           ${{ github.event.before }}
            
     - name: Get delta files with SGD
-      run: sfdx sgd:source:delta --to master --from HEAD^ --output .
+      run: sfdx sgd:source:delta --to master --from HEAD~1 --output .
       
 
     - name: 'Decrypt file'
